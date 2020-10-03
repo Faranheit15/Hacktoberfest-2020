@@ -4,7 +4,6 @@
 void main()
 {
     char a[100], b[100];
-   
     printf("\nEnter the first string : ");
     gets(a);
     printf("\nEnter the second string : ");
@@ -14,5 +13,4 @@ void main()
         printf("\nEntered strings are equal.");
     else
         printf("\nEntered strings are not equal.");
-    
 }
