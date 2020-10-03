@@ -20,5 +20,4 @@ void main()
     printf("\nReversed String is : ");
     for (i = len; i > 0; i--)
         printf("%c", *ptr--);
-    
 }
