@@ -14,7 +14,7 @@
   ![](https://i.ibb.co/0jHpjBP/hacktoberfest.jpg)
 <br></br>
 ##
-  ### 3. Then go to https://github.com/Faranheit15/Hacktoberfest-2020 and click on *"star"*🌟 and *"fork"*🍴.
+  ### 3. Then go to https://github.com/tejasnopany/Hacktoberfest-2020 and click on *"star"*🌟 and *"fork"*🍴.
   ![](https://i.ibb.co/R4p91T9/fork1.jpg)
 <br></br>
 ##
