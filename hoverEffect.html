@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+	body{
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #eee;
+	}
+
+	.social-media{
+		display: inline-flex;
+	    justify-content: center;
+		align-items: center;
+		width: 60px; height: 60px;
+		border-radius: 50%;
+		border:3px solid;
+		text-decoration: none;
+		margin: 0 25px;
+		position: relative;
+		transition: all 0.3s;
+		overflow: hidden;
+		box-shadow: 0 10px 10px rgba(0,0,0,0.15);
+	}
+
+	.social-media i{
+		font-size: 25px;
+		transition: all 0.3s;
+		color: #fff;
+	}
+
+	.social-media span{
+		position: absolute;
+		transform: translateY(-100px);
+		text-transform: uppercase;
+		font-family: 'Century Gothic';
+		font-weight: bolder;
+		transition: all 0.3s;
+	}
+
+	.social-media:nth-child(1){
+		border-color: #4267B2;
+		background-color: #4267B2;
+	}
+
+	.social-media:nth-child(2){
+		border-color: #0088cc;
+		background-color: #0088cc;
+	}
+
+	.social-media:nth-child(3){
+		border-color: #00acee;
+		background-color: #00acee;
+	}
+
+	.social-media:nth-child(4){
+		border-color: #ea4c89;
+		background-color: #ea4c89;
+	}
+
+	.social-media:hover{
+		border-radius: 5px;
+		padding: 16px 90px;
+		background-color: transparent;
+	}
+
+	.social-media:hover i{ transform: translateY(100px); }
+
+	.social-media:hover span{ transform: translateY(0); }
+
+	.social-media:nth-child(1):hover span{ color: #4267B2; }
+
+	.social-media:nth-child(2):hover span{ color: #0088cc; }
+
+	.social-media:nth-child(3):hover span{ color: #00acee; }
+
+	.social-media:nth-child(4):hover span{ color: #ea4c89; }
+	</style>
+
+	<title> Social Media Icons Hover Effect </title>
+
+<!-- embedding fontawesome icons	 -->
+<script src="https://kit.fontawesome.com/e25b852c87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="social-media-list">
+	<a class="social-media" href="#">
+		<i class="fab fa-facebook-f"></i>
+		<span>follow</span>
+	</a>
+    <a class="social-media" href="#">
+		<i class="fab fa-telegram-plane"></i>
+		<span>join</span>
+	</a>
+	<a class="social-media" href="#">
+		<i class="fab fa-twitter"></i>
+		<span>follow</span>
+	</a>
+	<a class="social-media" href="#">
+		<i class="fab fa-dribbble"></i>
+		<span>follow</span>
+	</a>
+</div>
+
+</body>
+</html>
