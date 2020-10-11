@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Input Field Animation </title>
+	<style media="screen">
+	*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+	body{
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #111;
+	}
+
+	.input-group{
+		margin: 25px 0;
+		position: relative;
+	}
+
+	.input-group input{
+		width: 300px;
+		padding: 15px;
+		background-color: rgba(255,255,255,0.5);
+		color: #111;
+		outline: none;
+		border:none;
+		font-family: "Century Gothic";
+	}
+
+	label{
+		position: absolute;
+		left: 15px;
+		top: 50%; transform: translateY(-50%);
+		color: #111;
+		pointer-events: none;
+		font-family: "Century Gothic";
+	}
+
+	label span{
+		display: inline-block;
+		transition: transform 0.2s, color 0.3s;
+	}
+
+	input:focus + label span, input:not(:placeholder-shown) + label span{
+		transform: translateY(-38px);
+		color: #fff;
+	}
+	</style>
+
+
+</head>
+<body>
+
+ <div class="input-group">
+	<input type="text" placeholder=" ">
+	<label> Name </label>
+ </div>
+ <div class="input-group">
+	<input type="email" placeholder=" ">
+	<label> Email </label>
+ </div>
+ <div class="input-group">
+	<input type="password" placeholder=" ">
+	<label> Password </label>
+ </div>
+
+<script>
+const labels = document.querySelectorAll("label");
+
+labels.forEach((label)=>{
+		label.innerHTML = label.innerText
+		.split("")
+		.map((letter,index)=>{
+			return `<span style="transition-delay:${index*100}ms">${letter}</span>`
+		}).join("");
+})
+</script>
+</body>
+</html>
