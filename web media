@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>media</title>
+</head>
+<body>
+<h1 align="center"><font color="black">WEBMEDIA</font></h1>
+<hr color ="red" width="70% size8">
+<br>
+<center>
+    <button>HOME</button>
+    <button>AUDIO</button>
+    <button>VIDEO</button>
+    <button>IMAGES</button>
+    <button>ABOUT US</button>
+</center>
+<br>
+<center>
+    <marquee direction ="up"></marquee>
+    </center>
+    <br>
+</body>
+</html>
