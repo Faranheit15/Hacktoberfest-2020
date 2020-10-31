@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>
+circle
+</title>
+<style>
+#dv
+{
+height :500px;
+width:500px;
+border:1px solid;
+border-radius:250px;
+}
+</style>
+</head>
+<body>
+<div id="dv">
+</div>
+<hr><hr>
+</body>
+</html>
