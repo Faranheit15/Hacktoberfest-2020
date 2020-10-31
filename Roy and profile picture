@@ -1,0 +1,41 @@
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+/**
+ *
+ * @author DELL
+ */
+class Testclass {
+
+    /**
+     * @param args
+     * @throws java.io.IOException
+     */
+    public static void main(String[] args)   throws IOException {
+       
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int l=Integer.parseInt(br.readLine());
+        int t=Integer.parseInt(br.readLine());
+        for(int i=0;i<t;i++)
+        {
+            StringTokenizer tk=new StringTokenizer(br.readLine());
+        int h=Integer.parseInt(tk.nextToken());
+        int w=Integer.parseInt(tk.nextToken());
+        if((h<l||w<l)|| (h<l&&w<l))         {
+                    System.out.println("UPLOAD ANOTHER");
+                }
+                    else 
+                    if((w==h)&&((w==l&&h==l)||(w>l&&h>l)))
+                            {
+                                System.out.println("ACCEPTED");
+                            }
+                                else
+                                System.out.println("CROP IT");
+                }}
+        // TODO code application logic here
+    }
+    
+
