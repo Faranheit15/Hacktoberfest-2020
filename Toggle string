@@ -1,0 +1,40 @@
+import java.io.*;
+class Testclass
+{
+   
+    public static void main(String[] args) throws IOException {
+          BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+     int l;
+        String s2 = "",s3,s4="",s5,s6="";
+        String s=br.readLine();
+        l=s.length();
+        char ch;
+        int i;
+        char c,c2;
+        int c1;
+        for(i=0;i<l;i++)
+        {
+            c=s.charAt(i);
+            char c11=c;
+            c1=(int)c;
+            if(c1>=65&&c1<=91)
+        {
+           
+             s2=s2+c11;
+             s3=s2.toLowerCase();
+          s6=s6+s3;
+             }
+            else{
+           
+               s4=s4+c11;
+             s5=s4.toUpperCase();
+              s6=s6+s5;
+            }
+            s2="";
+           
+            s4="";
+          
+            
+        }
+        System.out.println(s6);
+    }}
