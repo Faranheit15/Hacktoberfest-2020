@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            loginpage
+        </title>
+    </head>
+        <body>
+            <form>
+<fieldset>
+<legend>LOGIN US </legend><br>
+USERNAME<br>
+<input type='text' placeholder="USERNAME">
+<br><br>
+PASSWORD<br>
+<input type="password" placeholder="PASSWORD" maxlenght="10">
+<br><br>
+<center>
+    <input type="button" value="login">
+</center>
+</fieldset>
+            </form>
+        </body>
+</html>
